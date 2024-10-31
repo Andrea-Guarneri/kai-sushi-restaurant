@@ -1,6 +1,8 @@
-# Kai-Sushi Restaurant Website
+# Kai-Sushi Restaurant Website 🍣
 
 Welcome to the **Kai-Sushi Restaurant Website** project! This project is an exercise in front-end web development focused on building a creative, responsive website using HTML and Tailwind CSS.
+
+🌐 **Visit the Live Site:** You can explore the project [here on Netlify](https://kai-sushi-ag.netlify.app/) and see the full design in action.
 
 ## Project Purpose
 
@@ -43,8 +45,9 @@ Potential enhancements include:
 - **Accessibility**: Ensuring the site meets accessibility standards for a more inclusive user experience.
 - **SEO Optimization**: Implementing meta tags and other SEO practices to improve search engine visibility.
 
-## Acknowledgments
+## Author
 
-This project is inspired by the principles of modern web development and a dedication to continuous learning in HTML, CSS, and Tailwind. It is a testament to the power of hands-on practice in achieving proficiency in front-end design.
+This project was created by [Andrea Guarneri](https://www.linkedin.com/in/andreaguarneri) 👨‍💻.  
+Feel free to explore, provide feedback, or suggest improvements!
 
-Thank you for visiting the **Kai-Sushi Restaurant Website** repository. Feel free to explore, provide feedback, or suggest improvements!
+Thank you for visiting the **Kai-Sushi Restaurant Website** repository!
