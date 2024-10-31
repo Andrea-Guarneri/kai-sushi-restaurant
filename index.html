@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon standard -->
+    <link rel="icon" href="assets/logos/kai-logo.png" type="image/x-icon">
+
+    <title>Kai-Sushi</title>
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 via-slate-500 to-slate-400 text-white font-sans">
+
+<!-- Header Section -->
+<header class="bg-zinc-950 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo and Title -->
+        <div class="flex items-center space-x-3">
+            <img src="assets/logos/kai-logo.png" alt="Sushi Haven Logo" class="h-24 w-auto">
+        </div>
+    
+        <!-- Navigation Links -->
+        <nav class="flex space-x-6 text-xl">
+            <a href="#menu" class="hover:text-red-500">Menu</a>
+            <a href="#specials" class="hover:text-red-500">Specials</a>
+            <a href="#location" class="hover:text-red-500">Location</a>
+            <a href="#contacts" class="hover:text-red-500">Contacts</a>
+            <!-- Cart Icon -->
+            <a href="#cart" alt="Cart icon" class="hover:text-red-500">
+                <img src="assets/logos/cart-icon.png" alt="Cart Icon" class="h-6 w-6">
+            </a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-full relative" style="background-image: url('assets/image/sushi-banner.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white py-24">
+            <h1 class="text-5xl font-semibold mb-4">Welcome to Kai-Sushi</h1>
+            <p class="text-xl">Experience authentic fresh sushi in a stylish environment</p>
+            <a href="#book" class="inline-block bg-yellow-500 text-gray-900 px-6 py-2 mt-4 font-semibold rounded-full hover:bg-yellow-600 transition duration-200">
+                Book a Table
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Menu Item Card-1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-1.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Hosomaki</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold ">$8.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-2.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Smoked Nigiri</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$9.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-3.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Sashimi-Mix</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$13.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-4.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Salmon Cube Roll</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$9.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-5.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Special Nigiri</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$10.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-6.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Temaki</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$8.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-7 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-7.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Classic Nigiri</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$8.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-8 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-8.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">California Roll</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$8.99</p>
+                </div>
+            </div>
+            <!-- Menu Item Card-9 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/sushi-9.jpg" alt="Sushi Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-600 font-semibold mb-2">Uramaki</h3>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                    <p class="text-xl text-yellow-600 font-bold">$8.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- House Specials Section -->
+    <section id="specials" class="text-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">House Specialties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Speciality Item Card-1 -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/image/sushi-special-1.jpg" alt="Specialty Sushi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Uramaki Special</h3>
+                        <p class="text-gray-300 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                        <p class="text-yellow-400 font-bold">$12.99</p>
+                    </div>
+                </div>
+                <!-- Speciality Item Card-2 -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/image/sushi-special-2.jpg" alt="Specialty Sushi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Dragon Roll</h3>
+                        <p class="text-gray-300 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                        <p class="text-yellow-400 font-bold">$12.99</p>
+                    </div>
+                </div>
+                <!-- Speciality Item Card-3 -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/image/sushi-special-3.jpg" alt="Specialty Sushi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fish Eggs Hosomaki </h3>
+                        <p class="text-gray-300 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                        <p class="text-yellow-400 font-bold">$12.99</p>
+                    </div>
+                </div>
+                <!-- Speciality Item Card-4 -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/image/sushi-special-4.jpg" alt="Specialty Sushi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fruit Roll</h3>
+                        <p class="text-gray-300 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                        <p class="text-yellow-400 font-bold">$12.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Photos Section -->
+    <section id="location" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Location</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Location Image Card-1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/location-3.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-500 font-semibold mb-2">Cozy Dining Area</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                </div>
+            </div>
+            <!-- Location Image Card-2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/location-2.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-500 font-semibold mb-2">Authentic Food Experience</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                </div>
+            </div>
+            <!-- Location Image Card-3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="assets/image/location-1.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl text-red-500 font-semibold mb-2">Suggestive Location</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts" class="text-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Phone Number Card -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-6">
+                    <h3 class="text-xl font-semibold mb-4">Contact Number:</h3>
+                    <p class="text-2xl text-red-600 font-bold mb-2">(123) 456-7890</p>
+                    <p class="text-gray-300 mb-4">Available from 10 AM to 10 PM</p>
+                    <a href="tel:+1234567890" class="bg-red-600 text-gray-900 px-4 py-2 rounded-full hover:bg-red-800 transition duration-200">
+                        Call Us
+                    </a>
+                </div>
+
+                <!-- Map Card -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509748!2d144.9537353158922!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f234f1df%3A0xb1d37ff1f07e2bfa!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1616143955647!5m2!1sen!2sau"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Find Us:</h3>
+                        <p class="text-gray-300">123 Sushi St, Flavor Town, Cityname</p>
+                    </div>
+                </div>
+                
+                <!-- Social Media Card -->
+                <div class="bg-zinc-950 rounded-lg shadow-lg overflow-hidden p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center">Follow Us:</h3>
+                    <div class="flex justify-around text-yellow-400">
+                        <a href="https://facebook.com" target="_blank" class="hover:text-red-600">
+                            <img src="assets/logos/facebook-icon.png" alt="Facebook Logo" class="h-12 w-12">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="hover:text-red-600">
+                            <img src="assets/logos/instagram-icon.png" alt="Instagram Logo" class="h-12 w-12">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="hover:text-red-600">
+                            <img src="assets/logos/x-icon.png" alt="Twitter Logo" class="h-12 w-12">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-zinc-950 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+        <!-- Logo Image -->
+        <img src="assets/logos/andrea-g-logo-text-white.png" alt="Logo di Andrea Guarneri" class="mx-auto h-8 w-auto mb-4">
+        <!-- Development Credit -->
+        <p class="text-sm text-gray-400 mb-2">Developed by Andrea Guarneri</p>
+        <p>&copy; 2024 Sushi Haven. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
