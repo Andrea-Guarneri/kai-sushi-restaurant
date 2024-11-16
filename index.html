@@ -37,6 +37,7 @@
 
                 <!-- Desktop Menu Links -->
                 <div class="mr-4 hidden md:flex gap-x-6">
+                    <a href="#about" class="hover:text-red-500 text-sm sm:text-base">About</a>
                     <a href="#menu" class="hover:text-red-500 text-sm sm:text-base">Menu</a>
                     <a href="#specials" class="hover:text-red-500 text-sm sm:text-base">Specials</a>
                     <a href="#location" class="hover:text-red-500 text-sm sm:text-base">Location</a>
@@ -64,21 +65,56 @@
         </div>
     </header>
 
-
     <!-- Hero Section -->
-    <section class="bg-cover bg-center h-full relative"
+    <section class="bg-cover bg-center h-[90vh] relative"
         style="background-image: url('assets/images/sushi-banner.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 text-center text-white py-16 px-4">
-            <h1 class="text-3xl sm:text-5xl font-semibold mb-4">Welcome to Kai-Sushi</h1>
-            <p class="text-base sm:text-xl">Experience authentic fresh sushi in a stylish environment</p>
-            <a href="#book"
-                class="inline-block bg-yellow-500 text-gray-900 px-6 py-2 mt-4 font-semibold rounded-full hover:bg-yellow-600 transition duration-200">
-                Book a Table
-            </a>
+        <div class="relative z-10 flex items-center justify-center text-center text-white h-full px-4">
+            <div>
+                <h1 class="text-3xl sm:text-5xl font-semibold mb-4">Welcome to Kai-Sushi</h1>
+                <p class="text-base sm:text-xl mb-4">Experience authentic fresh sushi in a stylish environment</p>
+                <a href="#book"
+                    class="inline-block bg-yellow-500 text-gray-900 px-6 py-2 mt-4 font-semibold rounded-full hover:bg-yellow-600 transition duration-200">
+                    Book a Table
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute flex flex-col items-center bottom-6 left-1/2 transform -translate-x-1/2">
+            <span class="mb-2 text-sm">Scroll Down</span>
+            <img src="assets/icons/arrow-down.png" alt="Scroll Down Arrow" class="w-6 h-6 animate-bounce">
         </div>
     </section>
 
+    <!-- Our Story -->
+    <section id="about" class="container mx-auto py-8 px-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Our Story</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <!-- History Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex">
+                <img src="assets/images/about-story2.jpg" alt="Sushi Restaurant" class="w-full md:w-1/2 h-48 sm:h-64 object-cover">
+                <div class="p-4 sm:p-6 w-full md:w-1/2">
+                    <h3 class="text-lg sm:text-xl font-semibold text-red-600 mb-2">Our Sushi Story</h3>
+                    <p class="text-gray-700 text-sm sm:text-base mb-4">
+                        We are passionate about crafting the finest sushi with the freshest ingredients. Our journey started in a small corner of Japan, where tradition and taste come together to create an unforgettable experience.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- History Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex">
+                <img src="assets/images/about-story.jpg" alt="Sushi Restaurant" class="w-full md:w-1/2 h-48 sm:h-64 object-cover">
+                <div class="p-4 sm:p-6 w-full md:w-1/2">
+                    <h3 class="text-lg sm:text-xl font-semibold text-red-600 mb-2">A Tradition of Excellence</h3>
+                    <p class="text-gray-700 text-sm sm:text-base mb-4">
+                        Our chefs bring generations of sushi-making expertise to every dish. Each piece of sushi is prepared with care and skill, ensuring a delicious meal every time you visit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Menu Section -->
     <section id="menu" class="container mx-auto py-8 px-4">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Our Menu</h2>
@@ -215,86 +251,27 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Menu Item Card-7 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/sushi-7.jpg" alt="Sushi Roll" class="w-full h-32 sm:h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-lg sm:text-xl text-red-600 font-semibold mb-2">Classic Nigiri</h3>
-                    <p class="text-gray-700 text-sm sm:text-base mb-4">Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima
-                        iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
-                    <!-- Flex container for price and button -->
-                    <div class="flex items-center justify-between">
-                        <p class="text-lg sm:text-xl text-black font-bold">$8.99</p>
-                        <!-- Button Add to Cart with icon -->
-                        <button
-                            class="bg-red-500 text-whitext-sm sm:text-base font-semibold py-2 px-4 rounded-full hover:bg-red-700 transition-200 flex items-center gap-2">
-                            <!-- Cart Icon (Image) -->
-                            <img src="assets/icons/cart-icon.png" alt="Cart Icon" class="h-5 w-5">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Menu Item Card-8 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/sushi-8.jpg" alt="Sushi Roll" class="w-full h-32 sm:h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-lg sm:text-xl text-red-600 font-semibold mb-2">California Roll</h3>
-                    <p class="text-gray-700 text-sm sm:text-base mb-4">Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima
-                        iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
-                    <!-- Flex container for price and button -->
-                    <div class="flex items-center justify-between">
-                        <p class="text-lg sm:text-xl text-black font-bold">$8.99</p>
-                        <!-- Button Add to Cart with icon -->
-                        <button
-                            class="bg-red-500 text-whitext-sm sm:text-base font-semibold py-2 px-4 rounded-full hover:bg-red-700 transition-200 flex items-center gap-2">
-                            <!-- Cart Icon (Image) -->
-                            <img src="assets/icons/cart-icon.png" alt="Cart Icon" class="h-5 w-5">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Menu Item Card-9 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/sushi-9.jpg" alt="Sushi Roll" class="w-full h-32 sm:h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-lg sm:text-xl text-red-600 font-semibold mb-2">Uramaki</h3>
-                    <p class="text-gray-700 text-sm sm:text-base mb-4">Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Placeat accusamus esse quos consectetur pariatur tempore harum quia, minima
-                        iusto explicabo molestiae, quasi hic tempora sequi quis quisquam ex quod dolores..</p>
-                    <!-- Flex container for price and button -->
-                    <div class="flex items-center justify-between">
-                        <p class="text-lg sm:text-xl text-black font-bold">$8.99</p>
-                        <!-- Button Add to Cart with icon -->
-                        <button
-                            class="bg-red-500 text-whitext-sm sm:text-base font-semibold py-2 px-4 rounded-full hover:bg-red-700 transition-200 flex items-center gap-2">
-                            <!-- Cart Icon (Image) -->
-                            <img src="assets/icons/cart-icon.png" alt="Cart Icon" class="h-5 w-5">
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-     <!-- Banner House Specialties-->
-    <section class="bg-cover bg-center h-full relative"
+    <!-- Banner House Specialties -->
+    <section class="bg-cover bg-center h-[50vh] relative"
         style="background-image: url('assets/images/banner-2.png');">
-    <!-- Dark overlay for better text contrast -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <!-- Centered text content -->
-    <div class="relative z-10 text-center text-white py-16 px-4">
-        <p class="text-2xl sm:text-3xl font-semibold">
-            Discover the Art of Flavor in Every Bite
-        </p>
-    </div>
+        <!-- Dark overlay for better text contrast -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Centered text content -->
+        <div class="relative z-10 flex items-center justify-center text-center text-white h-full px-4">
+            <p class="text-2xl sm:text-4xl font-semibold">
+                Discover the Art of Flavor in Every Bite
+            </p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute flex flex-col items-center bottom-6 left-1/2 transform -translate-x-1/2">
+            <span class="mb-2 text-sm">Scroll Down</span>
+            <img src="assets/icons/arrow-down.png" alt="Scroll Down Arrow" class="w-6 h-6 animate-bounce">
+        </div>
+
     </section>
 
     <!-- House Specials Section -->
@@ -453,38 +430,45 @@
     <!-- Location Photos Section -->
     <section id="location" class="container mx-auto py-8 px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Our Location</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Location Banner with Cards -->
+        <div class="relative bg-gray-300 rounded-lg overflow-hidden">
+            <!-- Banner Image or Background -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/location-banner.jpg'); height: 300px;"></div>
 
-            <!-- Location Image Card-1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/location-3.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-xl text-red-500 font-semibold mb-2">Cozy Dining Area</h3>
-                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
-                        esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
-                        tempora sequi quis quisquam ex quod dolores..</p>
+            <!-- Cards Container -->
+            <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+                <!-- Location Image Card-1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/images/location-3.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-xl text-red-500 font-semibold mb-2">Cozy Dining Area</h3>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
+                            esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
+                            tempora sequi quis quisquam ex quod dolores..</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Location Image Card-2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/location-2.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-xl text-red-500 font-semibold mb-2">Authentic Food Experience</h3>
-                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
-                        esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
-                        tempora sequi quis quisquam ex quod dolores..</p>
+                <!-- Location Image Card-2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/images/location-2.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-xl text-red-500 font-semibold mb-2">Authentic Food Experience</h3>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
+                            esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
+                            tempora sequi quis quisquam ex quod dolores..</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Location Image Card-3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="assets/images/location-1.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
-                <div class="p-4 sm:p-6">
-                    <h3 class="text-xl text-red-500 font-semibold mb-2">Suggestive Location</h3>
-                    <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
-                        esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
-                        tempora sequi quis quisquam ex quod dolores..</p>
+                <!-- Location Image Card-3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/images/location-1.jpg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-xl text-red-500 font-semibold mb-2">Suggestive Location</h3>
+                        <p class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusamus
+                            esse quos consectetur pariatur tempore harum quia, minima iusto explicabo molestiae, quasi hic
+                            tempora sequi quis quisquam ex quod dolores..</p>
+                    </div>
                 </div>
             </div>
         </div>
